@@ -1,5 +1,5 @@
 # gvrocksnow's PixelArt Upscaler
-Upscales pixel art while keeping clean outlines
+Upscales pixel art while keeping clean outlines. Generates some artifacts which can be avoided with proper pixel placement.
 
 Download Executable - https://gvrocksnow.itch.io/pixelart-upscaler
 
