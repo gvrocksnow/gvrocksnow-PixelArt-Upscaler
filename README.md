@@ -3,7 +3,7 @@ Upscales pixel art while keeping clean outlines
 
 Download Executable - https://gvrocksnow.itch.io/pixelart-upscaler
 
-Original (Credit - https://alexs-assets.itch.io/16x16-rpg-item-pack)
+Original Art (Credit - https://alexs-assets.itch.io/16x16-rpg-item-pack)
 
 ![Sheet](https://user-images.githubusercontent.com/22365275/68945399-56454f00-07d6-11ea-9bb0-ffc697e3e4d8.png)
 
