@@ -23,7 +23,7 @@ Standalone File Browser - https://github.com/gkngkc/UnityStandaloneFileBrowser
 ![Capture](https://user-images.githubusercontent.com/22365275/68947245-01f09e00-07db-11ea-9e57-9e7f4d7fa45d.PNG)  
 
 1. Select an outline color. (Default is black)
-2. Enter a scale factor amount. (Ideally between 1-6)
+2. Enter a scale factor amount. (Ideally between 2-6)
 3. Select the input folder for multiple files or input file for single png file.
 4. Output files are located in same folder as input files
 
