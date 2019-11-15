@@ -13,6 +13,6 @@ Original (Credit - https://alexs-assets.itch.io/16x16-rpg-item-pack)
 
 ![Sheet_4X](https://user-images.githubusercontent.com/22365275/68945477-7bd25880-07d6-11ea-8b37-32b8aff9d145.png)
 
-Credits for plugins used:
-Color Picker - https://github.com/judah4/HSV-Color-Picker-Unity
-Standalone File Browser - https://github.com/gkngkc/UnityStandaloneFileBrowser
+Credits for plugins used:  
+Color Picker - https://github.com/judah4/HSV-Color-Picker-Unity    
+Standalone File Browser - https://github.com/gkngkc/UnityStandaloneFileBrowser  
