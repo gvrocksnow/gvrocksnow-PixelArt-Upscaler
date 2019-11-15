@@ -14,10 +14,7 @@ Original Art (Credit - https://alexs-assets.itch.io/16x16-rpg-item-pack)
 4X Upscaling
 
 ![Sheet_4X](https://user-images.githubusercontent.com/22365275/68945477-7bd25880-07d6-11ea-8b37-32b8aff9d145.png)
-
-Credits for plugins used:  
-Color Picker - https://github.com/judah4/HSV-Color-Picker-Unity    
-Standalone File Browser - https://github.com/gkngkc/UnityStandaloneFileBrowser  
+ 
 
 # USAGE
 ![Capture](https://user-images.githubusercontent.com/22365275/68947245-01f09e00-07db-11ea-9e57-9e7f4d7fa45d.PNG)  
@@ -36,3 +33,8 @@ Standalone File Browser - https://github.com/gkngkc/UnityStandaloneFileBrowser
 - Fill Colors : Fills the outlines with colors.  
 - Interpolate Fill Colors : Interpolates the fill colors from the previous step.  
 - Interpolation Order : Specifies whether dark colors are drawn on top of light colors or vice versa. Can be set to "light colors over dark" if the reverse order is needed.
+
+
+Credits for plugins used:  
+Color Picker - https://github.com/judah4/HSV-Color-Picker-Unity    
+Standalone File Browser - https://github.com/gkngkc/UnityStandaloneFileBrowser 
