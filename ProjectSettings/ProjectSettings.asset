@@ -682,11 +682,15 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
-    UNet: 1
+    Build: 0
+    Collab: 0
+    ErrorHub: 0
+    Hub: 0
+    UNet: 0
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 040396d3-ed27-4755-8a41-857215c73db7
-  projectName: 2D Ocean Of Ruins
+  cloudProjectId: 690c0a82-1a12-4b90-b684-c5df72da980f
+  projectName: gvrocksnow's PixelArt Upscaler
   organizationId: gvrocksnow
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
