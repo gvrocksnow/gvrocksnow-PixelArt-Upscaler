@@ -1,4 +1,4 @@
-# gvrocksnow's-PixelArt-Upscaler
+# gvrocksnow's PixelArt Upscaler
 Upscales pixel art while keeping clean outlines
 
 Original (Credit - https://alexs-assets.itch.io/16x16-rpg-item-pack)
