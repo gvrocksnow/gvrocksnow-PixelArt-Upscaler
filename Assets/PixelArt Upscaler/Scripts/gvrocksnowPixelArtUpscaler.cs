@@ -19,7 +19,7 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
     public bool tryFixingArtifacts = false;
     public bool fillColors = true;
     public bool interpolateFillColors = true;
-    public InterPolationOrder interpolationOrder;
+    public InterpolationOrder interpolationOrder;
     public string outputNameSuffix = "Output";
     public bool process = false;
 
@@ -45,7 +45,7 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
     public ColorPicker colorPicker;
     public Text statusText;
 
-    public enum InterPolationOrder
+    public enum InterpolationOrder
     {
         darkColorsOverLightColors,
         lightColorsOverDarkColors
@@ -70,11 +70,11 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
 
         if(interpolationOrderDropdown.value == 0)
         {
-            interpolationOrder = InterPolationOrder.darkColorsOverLightColors;
+            interpolationOrder = InterpolationOrder.darkColorsOverLightColors;
         }
         if (interpolationOrderDropdown.value == 1)
         {
-            interpolationOrder = InterPolationOrder.lightColorsOverDarkColors;
+            interpolationOrder = InterpolationOrder.lightColorsOverDarkColors;
         }
 
         selectInputOutlineColor = colorPicker.CurrentColor;
@@ -1218,10 +1218,10 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
 
             List<Color> orderedColorList = new List<Color>();
 
-            if (interpolationOrder == InterPolationOrder.darkColorsOverLightColors)
+            if (interpolationOrder == InterpolationOrder.darkColorsOverLightColors)
             {
                 orderedColorList = inputTextureColorList.OrderByDescending(x => (x.r + x.g + x.b) * x.a).ToList();
-            }else if(interpolationOrder == InterPolationOrder.lightColorsOverDarkColors)
+            }else if(interpolationOrder == InterpolationOrder.lightColorsOverDarkColors)
             {
                 orderedColorList = inputTextureColorList.OrderBy(x => (x.r + x.g + x.b) * x.a).ToList();
             }
