@@ -1,5 +1,5 @@
 # gvrocksnow's PixelArt Upscaler
-Upscales pixel art while keeping clean single-pixel outlines. Generates some artifacts which can be avoided with proper pixel placement.
+Upscales pixel art while keeping clean single-pixel outlines. Generates some artifacts which can be avoided with proper pixel placement. Written in Unity.
 
 **Download Executable** - https://gvrocksnow.itch.io/pixelart-upscaler
 
