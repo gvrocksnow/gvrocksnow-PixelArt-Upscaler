@@ -26,7 +26,7 @@ Upscales pixel art while keeping clean single-pixel outlines. Generates some art
 
 # OPTIONS
 
-- **Output suffix** : Appends this string to the output file.  
+- **Output suffix** : Appends this string to the output file name.  
 - **Remove extra lines** : Removes extra lines when generating outlines.  
 - **Fill gaps** : Fill blocks surrounded by outlines.  
 - **Try fixing artifacts** : Experimental feature to fix artifacts when generating outlines. Recommended to leave this off.  
