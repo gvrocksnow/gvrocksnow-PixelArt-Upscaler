@@ -26,10 +26,10 @@ Upscales pixel art while keeping clean single-pixel outlines. Generates some art
 
 # OPTIONS
 
-- **Output suffix** : Appends this string to the output file name.  
-- **Remove extra lines** : Removes extra lines when generating outlines.  
-- **Fill gaps** : Fill blocks surrounded by outlines.  
-- **Try fixing artifacts** : Experimental feature to fix artifacts when generating outlines. Recommended to leave this off.  
+- **Output Suffix** : Appends this string to the output file name.  
+- **Remove Extra Lines** : Removes extra lines when generating outlines.  
+- **Fill Gaps** : Fill blocks surrounded by outlines.  
+- **Try Fixing Artifacts** : Experimental feature to fix artifacts when generating outlines. Recommended to leave this off.  
 - **Fill Colors** : Fills the outlines with colors.  
 - **Interpolate Fill Colors** : Interpolates the fill colors from the previous step.  
 - **Interpolation Order** : Specifies whether dark colors are drawn on top of light colors or vice versa. Can be set to "light colors over dark" if the reverse order is needed.
