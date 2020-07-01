@@ -2121,25 +2121,25 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
 
         int checkPixel = pixel + distance;
 
-        if (checkPixel > 0 && checkPixel < input.Length && extraLinePixels.Contains(checkPixel))
+        if (checkPixel >= 0 && checkPixel < input.Length && extraLinePixels.Contains(checkPixel))
         {
             rightSide = true;
         }
 
         checkPixel = pixel - distance;
-        if (checkPixel > 0 && checkPixel < input.Length && extraLinePixels.Contains(checkPixel))
+        if (checkPixel >= 0 && checkPixel < input.Length && extraLinePixels.Contains(checkPixel))
         {
             leftSide = true;
         }
 
         checkPixel = pixel + (texWidth * distance);
-        if (checkPixel > 0 && checkPixel < input.Length && extraLinePixels.Contains(checkPixel))
+        if (checkPixel >= 0 && checkPixel < input.Length && extraLinePixels.Contains(checkPixel))
         {
             topSide = true;
         }
 
         checkPixel = pixel - (texWidth * distance);
-        if (checkPixel > 0 && checkPixel < input.Length && extraLinePixels.Contains(checkPixel))
+        if (checkPixel >= 0 && checkPixel < input.Length && extraLinePixels.Contains(checkPixel))
         {
             bottomSide = true;
         }
