@@ -7,20 +7,15 @@ Upscales pixel art while keeping clean single-pixel outlines. Generates some art
 
 **Original Art** (Credit - https://alexs-assets.itch.io/16x16-rpg-item-pack)
 
-
-
 ![Sheet_2X](https://user-images.githubusercontent.com/22365275/68945447-72e18700-07d6-11ea-9001-7d9fe6ded36e.png)
 
-**2X Upscaling**
-
-
+**2X Upscaling**&nbsp;&nbsp;
 
 
 ![Sheet_4X](https://user-images.githubusercontent.com/22365275/68945477-7bd25880-07d6-11ea-8b37-32b8aff9d145.png)
 
-**4X Upscaling**
+**4X Upscaling**&nbsp;&nbsp;
 
- 
 
 # USAGE
 ![Capture](https://user-images.githubusercontent.com/22365275/68947245-01f09e00-07db-11ea-9e57-9e7f4d7fa45d.PNG)  
