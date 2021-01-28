@@ -1,7 +1,7 @@
 # gvrocksnow's PixelArt Upscaler
 Upscales pixel art while keeping clean single-pixel outlines. Generates some artifacts which can be avoided with proper pixel placement. Written in Unity 2018.3.4f1.
 
-**Download Executable** - https://gvrocksnow.itch.io/pixelart-upscaler
+**Download Executable** - https://gvrocksnow.itch.io/pixelart-upscaler<br /><br />
 
 ![Sheet](https://user-images.githubusercontent.com/22365275/68945399-56454f00-07d6-11ea-9bb0-ffc697e3e4d8.png)<br>
 **Original Art** (Credit - https://alexs-assets.itch.io/16x16-rpg-item-pack)<br /><br />
