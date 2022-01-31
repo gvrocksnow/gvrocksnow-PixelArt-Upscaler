@@ -21,7 +21,7 @@ Upscales pixel art while keeping clean single-pixel outlines. Generates some art
 1. Select the outline color of the input images. (Default is black)
 2. Enter a scale factor amount. (Ideally between 2-6)
 3. Select the input folder for multiple files or input file for single file. (.png format)
-4. Output files are exported in same folder as input files.
+4. Output files are exported in the same folder as input files.
 
 # OPTIONS
 
