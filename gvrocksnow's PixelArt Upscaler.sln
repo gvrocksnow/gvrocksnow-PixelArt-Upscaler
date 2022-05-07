@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gvrocksnow's PixelArt Upscaler", "Assembly-CSharp.csproj", "{88038A83-0F60-171D-B7B5-E1EAEB4CE247}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{88038A83-0F60-171D-B7B5-E1EAEB4CE247}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gvrocksnow's PixelArt Upscaler", "Assembly-CSharp-Editor.csproj", "{DEF1C735-B3F1-6861-63F9-7A09B188B0DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{DEF1C735-B3F1-6861-63F9-7A09B188B0DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

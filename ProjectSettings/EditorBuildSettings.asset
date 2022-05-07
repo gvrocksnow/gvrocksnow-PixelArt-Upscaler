@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Upscaler.unity
-    guid: 7127918802fdab146b4a1b0414c20c2a
+    path: Assets/PixelArt Upscaler/Scenes/PixelArtUpscaler.unity
+    guid: b2a082a36f4d0eb4ea0cdc40a1096541
   m_configObjects: {}
