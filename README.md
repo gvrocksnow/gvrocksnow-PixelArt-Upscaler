@@ -1,5 +1,5 @@
 # gvrocksnow's PixelArt Upscaler
-Upscales pixel art while keeping clean single-pixel outlines. Generates some artifacts which can be avoided with proper pixel placement. Written in Unity 2018.3.4f1.
+Upscales pixel art while keeping clean single-pixel outlines. Generates some artifacts which can be avoided with proper pixel placement. Written in Unity 2019.3.0f6.
 
 **Download Executable** - https://gvrocksnow.itch.io/pixelart-upscaler<br /><br />
 
@@ -16,7 +16,7 @@ Upscales pixel art while keeping clean single-pixel outlines. Generates some art
 
 
 # USAGE
-![Capture](https://user-images.githubusercontent.com/22365275/68947245-01f09e00-07db-11ea-9e57-9e7f4d7fa45d.PNG)  
+![Capture](https://user-images.githubusercontent.com/22365275/167245256-6853ef97-46c3-4fd2-a8ff-224e9e7f2300.png)
 
 1. Select the outline color of the input images. (Default is black)
 2. Enter a scale factor amount. (Ideally between 2-6)
