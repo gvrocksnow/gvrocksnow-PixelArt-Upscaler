@@ -16,7 +16,7 @@ Upscales pixel art while keeping clean single-pixel outlines. Generates some art
 
 
 # USAGE
-![Capture](https://user-images.githubusercontent.com/22365275/68947245-01f09e00-07db-11ea-9e57-9e7f4d7fa45d.PNG)  
+![Capture](https://user-images.githubusercontent.com/22365275/167244997-ef7ebd5e-e93b-498e-a1c9-d4e870face3c.png)
 
 1. Select the outline color of the input images. (Default is black)
 2. Enter a scale factor amount. (Ideally between 2-6)
