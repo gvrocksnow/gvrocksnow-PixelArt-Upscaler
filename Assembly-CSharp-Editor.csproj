@@ -326,6 +326,12 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>D:/My Data/My Game Projects/Asset PixelArt Upscaler/gvrocksnow's PixelArt Upscaler/Assets/Plugins/Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.WebBrowser">
+      <HintPath>D:/My Data/My Game Projects/Asset PixelArt Upscaler/gvrocksnow's PixelArt Upscaler/Assets/Plugins/Mono.WebBrowser.dll</HintPath>
+    </Reference>
     <Reference Include="Ookii.Dialogs">
       <HintPath>D:/My Data/My Game Projects/Asset PixelArt Upscaler/gvrocksnow's PixelArt Upscaler/Assets/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>
     </Reference>
@@ -346,12 +352,6 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>D:/My Data/My Game Projects/Asset PixelArt Upscaler/gvrocksnow's PixelArt Upscaler/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.WebBrowser">
-      <HintPath>D:/My Data/My Game Projects/Asset PixelArt Upscaler/gvrocksnow's PixelArt Upscaler/Assets/Plugins/Mono.WebBrowser.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Posix">
-      <HintPath>D:/My Data/My Game Projects/Asset PixelArt Upscaler/gvrocksnow's PixelArt Upscaler/Assets/Plugins/Mono.Posix.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/My Data/My Game Projects/Asset PixelArt Upscaler/gvrocksnow's PixelArt Upscaler/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>

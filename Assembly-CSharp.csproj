@@ -333,6 +333,12 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>D:/PavanExternalMain/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>D:/My Data/My Game Projects/Asset PixelArt Upscaler/gvrocksnow's PixelArt Upscaler/Assets/Plugins/Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.WebBrowser">
+      <HintPath>D:/My Data/My Game Projects/Asset PixelArt Upscaler/gvrocksnow's PixelArt Upscaler/Assets/Plugins/Mono.WebBrowser.dll</HintPath>
+    </Reference>
     <Reference Include="Ookii.Dialogs">
       <HintPath>D:/My Data/My Game Projects/Asset PixelArt Upscaler/gvrocksnow's PixelArt Upscaler/Assets/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>
     </Reference>
@@ -347,12 +353,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>D:/My Data/My Game Projects/Asset PixelArt Upscaler/gvrocksnow's PixelArt Upscaler/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.WebBrowser">
-      <HintPath>D:/My Data/My Game Projects/Asset PixelArt Upscaler/gvrocksnow's PixelArt Upscaler/Assets/Plugins/Mono.WebBrowser.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Posix">
-      <HintPath>D:/My Data/My Game Projects/Asset PixelArt Upscaler/gvrocksnow's PixelArt Upscaler/Assets/Plugins/Mono.Posix.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:/PavanExternalMain/Unity/Hub/Editor/2019.3.0f6/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
