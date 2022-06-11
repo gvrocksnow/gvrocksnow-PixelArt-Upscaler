@@ -1442,7 +1442,7 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
                     if (rightPixel >= 0 && rightPixel < inputColors.Length && inputColors[rightPixel] == selectInputOutlineColor && currPxl.a != 0)// && currPxl != selectInputOutlineColor)
                     {
 
-                        for (int x = 0; x < scaleFactor * 2; x++)
+                        for (int x = 0; x < Mathf.FloorToInt(scaleFactor * 1.5f); x++)
                         {
                             for (int y = 0; y < scaleFactor; y++)
                             {
@@ -1463,7 +1463,7 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
                     if (leftPixel >= 0 && leftPixel < inputColors.Length && inputColors[leftPixel] == selectInputOutlineColor && currPxl.a != 0)// && currPxl != selectInputOutlineColor)
                     {
 
-                        for (int x = -scaleFactor; x < scaleFactor; x++)
+                        for (int x = -Mathf.FloorToInt(scaleFactor * 0.5f); x < scaleFactor; x++)
                         {
                             for (int y = 0; y < scaleFactor; y++)
                             {
@@ -1486,7 +1486,7 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
 
                         for (int x = 0; x < scaleFactor; x++)
                         {
-                            for (int y = 0; y < scaleFactor*2; y++)
+                            for (int y = 0; y < Mathf.FloorToInt(scaleFactor * 1.5f); y++)
                             {
                                 int currOutputPixel = (scaleFactor) * ((h * inputTexture.width * (scaleFactor)) + w + ((y) * inputTexture.width)) + x;
 
@@ -1507,7 +1507,7 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
 
                         for (int x = 0; x < scaleFactor; x++)
                         {
-                            for (int y = -scaleFactor; y < scaleFactor; y++)
+                            for (int y = -Mathf.FloorToInt(scaleFactor * 0.5f); y < scaleFactor; y++)
                             {
                                 int currOutputPixel = (scaleFactor) * ((h * inputTexture.width * (scaleFactor)) + w + ((y) * inputTexture.width)) + x;
 
