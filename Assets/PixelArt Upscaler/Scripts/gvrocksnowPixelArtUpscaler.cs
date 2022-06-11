@@ -1406,7 +1406,7 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
 
             List<int> filledPixels = new List<int>();
 
-            /*
+            
             //upscale image before interpolation
             for (int w = 0; w < inputTexture.width; w++)
             {
@@ -1419,14 +1419,110 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
                     {
                         for (int y = 0; y < scaleFactor; y++)
                         {
-                            int currOutputPixel = (scaleFactor) * ((h * inputTexture.width * (scaleFactor)) + w + (y * inputTexture.width)) + x;
-                            outputColors[currOutputPixel] = currPxl;
-                            filledPixels.Add(currOutputPixel);
+                            if (currPxl != selectInputOutlineColor)
+                            {
+                                int currOutputPixel = (scaleFactor) * ((h * inputTexture.width * (scaleFactor)) + w + (y * inputTexture.width)) + x ;
+
+                                //if (currOutputPixel >= 0 && currOutputPixel < outputColors.Length)
+                                {
+                                    outputColors[currOutputPixel] = currPxl;
+                                    filledPixels.Add(currOutputPixel);
+                                }
+                            }
+
+
+
                         }
                     }
+
+                    //fill slight gaps
+
+                    //outline color pixel on right
+                    int rightPixel = (h * inputTexture.width) + w + 1;
+                    if (rightPixel >= 0 && rightPixel < inputColors.Length && inputColors[rightPixel] == selectInputOutlineColor && currPxl.a != 0)// && currPxl != selectInputOutlineColor)
+                    {
+
+                        for (int x = 0; x < scaleFactor * 2; x++)
+                        {
+                            for (int y = 0; y < scaleFactor; y++)
+                            {
+                                int currOutputPixel = (scaleFactor) * ((h * inputTexture.width * (scaleFactor)) + w + ((y) * inputTexture.width)) + x;
+
+                                if (currOutputPixel >= 0 && currOutputPixel < outputColors.Length)//&& currPxlColor != outlineColor)
+                                {
+                                    outputColors[currOutputPixel] = currPxl;
+                                }
+
+                            }
+                        }
+                    }
+
+                    
+                    //outline color pixel on left
+                    int leftPixel = (h * inputTexture.width) + w - 1;
+                    if (leftPixel >= 0 && leftPixel < inputColors.Length && inputColors[leftPixel] == selectInputOutlineColor && currPxl.a != 0)// && currPxl != selectInputOutlineColor)
+                    {
+
+                        for (int x = -scaleFactor; x < scaleFactor; x++)
+                        {
+                            for (int y = 0; y < scaleFactor; y++)
+                            {
+                                int currOutputPixel = (scaleFactor) * ((h * inputTexture.width * (scaleFactor)) + w + ((y) * inputTexture.width)) + x;
+
+                                if (currOutputPixel >= 0 && currOutputPixel < outputColors.Length)//&& currPxlColor != outlineColor)
+                                {
+                                    outputColors[currOutputPixel] = currPxl;
+                                }
+
+                            }
+                        }
+                    }
+
+
+                    //outline color pixel on top
+                    int topPixel = ((h+1) * inputTexture.width) + w;
+                    if (topPixel >= 0 && topPixel < inputColors.Length && inputColors[topPixel] == selectInputOutlineColor && currPxl.a != 0)// && currPxl != selectInputOutlineColor)
+                    {
+
+                        for (int x = 0; x < scaleFactor; x++)
+                        {
+                            for (int y = 0; y < scaleFactor*2; y++)
+                            {
+                                int currOutputPixel = (scaleFactor) * ((h * inputTexture.width * (scaleFactor)) + w + ((y) * inputTexture.width)) + x;
+
+                                if (currOutputPixel >= 0 && currOutputPixel < outputColors.Length)//&& currPxlColor != outlineColor)
+                                {
+                                    outputColors[currOutputPixel] = currPxl;
+                                }
+
+                            }
+                        }
+                    }
+
+
+                    //outline color pixel on bottom
+                    int bottomPixel = ((h-1) * inputTexture.width) + w;
+                    if (bottomPixel >= 0 && bottomPixel < inputColors.Length && inputColors[bottomPixel] == selectInputOutlineColor && currPxl.a != 0)// && currPxl != selectInputOutlineColor)
+                    {
+
+                        for (int x = 0; x < scaleFactor; x++)
+                        {
+                            for (int y = -scaleFactor; y < scaleFactor; y++)
+                            {
+                                int currOutputPixel = (scaleFactor) * ((h * inputTexture.width * (scaleFactor)) + w + ((y) * inputTexture.width)) + x;
+
+                                if (currOutputPixel >= 0 && currOutputPixel < outputColors.Length)//&& currPxlColor != outlineColor)
+                                {
+                                    outputColors[currOutputPixel] = currPxl;
+                                }
+
+                            }
+                        }
+                    }
+                    
                 }
             }
-            */
+            
 
             if (interpolateFillColors)
             {
@@ -1443,6 +1539,9 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
                         {
                             inputTextureColorList.Add(currPxlColor);
                         }
+
+
+
 
                     }
                 }
@@ -1505,7 +1604,7 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
                                         g = -1;
                                     }
 
-                                    for (int i = 0; i < scaleFactor + e; i++)
+                                    for (int i = -Mathf.FloorToInt((scaleFactor - 1) * 0.5f); i < scaleFactor + e - Mathf.FloorToInt((scaleFactor - 1) * 0.5f); i++)
                                     {
 
 
@@ -1562,9 +1661,9 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
 
                                     }
 
-                                    for (int i = e; i < scaleFactor + e; i++)
+                                    for (int i = e-Mathf.FloorToInt(scaleFactor*0.25f); i < scaleFactor + e- Mathf.FloorToInt(scaleFactor * 0.25f); i++)
                                     {
-                                        for (int y = range + f; y < (range * 2) + range + f; y++)
+                                        for (int y = range + f; y < (range * 2) + range + f + Mathf.FloorToInt((scaleFactor-1)*0.5f); y++)
                                         {
                                             x = y - scaleFactor + range + 1; //range + (range-1);
 
@@ -1656,6 +1755,7 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
                                     if (currPxlColor == selectInputOutlineColor)
                                     {
                                         xStart = Mathf.FloorToInt(scaleFactor / 3f);
+                                        xEnd = scaleFactor;
                                         yEnd = (scaleFactor * 2) - 1;
                                         yStart = scaleFactor - 1;
                                     }
