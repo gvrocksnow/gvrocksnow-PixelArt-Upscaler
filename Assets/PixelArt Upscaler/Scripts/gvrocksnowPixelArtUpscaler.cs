@@ -43,6 +43,7 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
     public Toggle fillColorsToggle;
     public Toggle interpolateFillColorsToggle;
     public Dropdown interpolationOrderDropdown;
+    public Dropdown scalingModeDropdown;
     public ColorPicker colorPicker;
     public Text statusText;
 
@@ -69,7 +70,19 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
         fillColors = fillColorsToggle.isOn;
         interpolateFillColors = interpolateFillColorsToggle.isOn;
 
-        if(interpolationOrderDropdown.value == 0)
+
+        if (scalingModeDropdown.value == 0)
+        {
+            singlePixelOutline = true;
+        }
+        else
+        {
+            singlePixelOutline = false;
+        }
+
+
+
+        if (interpolationOrderDropdown.value == 0)
         {
             interpolationOrder = InterpolationOrder.darkColorsOverLightColors;
         }

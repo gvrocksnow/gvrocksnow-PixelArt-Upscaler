@@ -99,6 +99,7 @@
     <None Include="Assets\HSVPicker\LICENSE.txt" />
     <None Include="Assets\HSVPicker\Resources\Shaders\Compute\GenerateSVTexture.compute" />
     <None Include="Assets\HSVPicker\README.txt" />
+    <None Include="Assets\Old\Test Algo.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/My Data/My Game Projects/Asset PixelArt Upscaler/gvrocksnow's PixelArt Upscaler/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
