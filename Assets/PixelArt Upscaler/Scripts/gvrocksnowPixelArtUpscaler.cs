@@ -1406,6 +1406,7 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
 
             List<int> filledPixels = new List<int>();
 
+            /*
             //upscale image before interpolation
             for (int w = 0; w < inputTexture.width; w++)
             {
@@ -1425,6 +1426,7 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
                     }
                 }
             }
+            */
 
             if (interpolateFillColors)
             {
@@ -1583,6 +1585,89 @@ public class gvrocksnowPixelArtUpscaler : MonoBehaviour {
                                             int currOutputPixel = (scaleFactor) * ((h * inputTexture.width * (scaleFactor)) + w + ((y + iMod) * inputTexture.width)) - x - 2;
 
                                             currOutputPixel -= (scaleFactor * inputTexture.width) - scaleFactor;
+                                            if (currOutputPixel >= 0 && currOutputPixel < outputColors.Length)//&& currPxlColor != outlineColor)
+                                            {
+                                                //if (SurroundedByNPixelsOfSameColor(inputColors, currPxl, inputTexture.width) > 2)
+                                                //if (IsColorADarkerThanB(currPxlColor, outputColors[currOutputPixel]))
+                                                {
+                                                    //outputColors[currOutputPixel] = new Color(currPxlColor.r, currPxlColor.g, currPxlColor.b, 0.9f);
+                                                    outputColors[currOutputPixel] = currPxlColor;
+                                                }
+                                            }
+
+                                        }
+                                    }
+
+                                }
+
+                                //same color pixel on right
+                                int rightPixel = currPxl + 1;
+                                if (rightPixel >= 0 && rightPixel < inputColors.Length && inputColors[rightPixel] == currPxlColor)
+                                {
+
+                                    int xStart = 0;
+                                    int xEnd = scaleFactor;
+                                    int yStart = 0;
+                                    int yEnd = scaleFactor;
+
+
+                                    if(currPxlColor == selectInputOutlineColor)
+                                    {
+                                        xStart = scaleFactor - 1;
+                                        xEnd = (scaleFactor * 2) - 1;
+                                        yStart = Mathf.FloorToInt(scaleFactor / 3f);
+                                    }
+
+                                    for (int x = xStart; x < xEnd; x++)
+                                    {
+                                        for (int y = yStart ; y < yEnd; y++)
+                                        {
+                                            
+                                            int currOutputPixel = (scaleFactor) * ((h * inputTexture.width * (scaleFactor)) + w + ((y) * inputTexture.width)) + x;
+
+                                           
+                                            if (currOutputPixel >= 0 && currOutputPixel < outputColors.Length)//&& currPxlColor != outlineColor)
+                                            {
+                                                //if (SurroundedByNPixelsOfSameColor(inputColors, currPxl, inputTexture.width) > 2)
+                                                //if (IsColorADarkerThanB(currPxlColor, outputColors[currOutputPixel]))
+                                                {
+                                                    //outputColors[currOutputPixel] = new Color(currPxlColor.r, currPxlColor.g, currPxlColor.b, 0.9f);
+                                                    outputColors[currOutputPixel] = currPxlColor;
+                                                }
+                                            }
+
+                                        }
+                                    }
+
+                                }
+
+                                //same color pixel on top
+                                int topPixel = currPxl + inputTexture.width;
+                                if (topPixel >= 0 && topPixel < inputColors.Length && inputColors[topPixel] == currPxlColor)
+                                {
+
+
+                                    int xStart = 0;
+                                    int xEnd = scaleFactor;
+                                    int yStart = 0;
+                                    int yEnd = scaleFactor;
+
+
+                                    if (currPxlColor == selectInputOutlineColor)
+                                    {
+                                        xStart = Mathf.FloorToInt(scaleFactor / 3f);
+                                        yEnd = (scaleFactor * 2) - 1;
+                                        yStart = scaleFactor - 1;
+                                    }
+
+                                    for (int x = xStart; x < xEnd; x++)
+                                    {
+                                        for (int y = yStart; y < yEnd; y++)
+                                        {
+
+                                            int currOutputPixel = (scaleFactor) * ((h * inputTexture.width * (scaleFactor)) + w + ((y) * inputTexture.width)) + x;
+
+
                                             if (currOutputPixel >= 0 && currOutputPixel < outputColors.Length)//&& currPxlColor != outlineColor)
                                             {
                                                 //if (SurroundedByNPixelsOfSameColor(inputColors, currPxl, inputTexture.width) > 2)
