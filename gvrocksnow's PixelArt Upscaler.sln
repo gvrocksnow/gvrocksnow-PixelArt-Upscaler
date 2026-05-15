@@ -1,29 +1,21 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{88038A83-0F60-171D-B7B5-E1EAEB4CE247}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{35c7f1de-f1b3-6168-63f9-7a09b188b0de}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{DEF1C735-B3F1-6861-63F9-7A09B188B0DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{838a0388-600f-1d17-b7b5-e1eaeb4ce247}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{88038A83-0F60-171D-B7B5-E1EAEB4CE247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88038A83-0F60-171D-B7B5-E1EAEB4CE247}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88038A83-0F60-171D-B7B5-E1EAEB4CE247}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88038A83-0F60-171D-B7B5-E1EAEB4CE247}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DEF1C735-B3F1-6861-63F9-7A09B188B0DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DEF1C735-B3F1-6861-63F9-7A09B188B0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DEF1C735-B3F1-6861-63F9-7A09B188B0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DEF1C735-B3F1-6861-63F9-7A09B188B0DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35c7f1de-f1b3-6168-63f9-7a09b188b0de}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35c7f1de-f1b3-6168-63f9-7a09b188b0de}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{838a0388-600f-1d17-b7b5-e1eaeb4ce247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{838a0388-600f-1d17-b7b5-e1eaeb4ce247}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
