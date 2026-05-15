@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\HSVPicker\Editor\BoxSliderEditor.cs" />
+    <None Include="Assets\MobileDependencyResolver\Editor\mobile-dependency-resolver_version-1.2.185_manifest.txt" />
     <Reference Include="UnityEngine">
       <HintPath>D:\PavanExternalMain\Unity\6000.3.15f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -521,6 +522,21 @@
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>D:\My Data\My Game Projects\Asset PixelArt Upscaler\gvrocksnow&apos;s PixelArt Upscaler\Library\PackageCache\com.unity.analytics@c9d14a6bdec6\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.PackageManagerResolver">
+      <HintPath>D:\My Data\My Game Projects\Asset PixelArt Upscaler\gvrocksnow&apos;s PixelArt Upscaler\Assets\MobileDependencyResolver\Editor\1.2.185\Google.PackageManagerResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.IOSResolver">
+      <HintPath>D:\My Data\My Game Projects\Asset PixelArt Upscaler\gvrocksnow&apos;s PixelArt Upscaler\Assets\MobileDependencyResolver\Editor\1.2.185\Google.IOSResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandlerImpl">
+      <HintPath>D:\My Data\My Game Projects\Asset PixelArt Upscaler\gvrocksnow&apos;s PixelArt Upscaler\Assets\MobileDependencyResolver\Editor\1.2.185\Google.VersionHandlerImpl.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandler">
+      <HintPath>D:\My Data\My Game Projects\Asset PixelArt Upscaler\gvrocksnow&apos;s PixelArt Upscaler\Assets\MobileDependencyResolver\Editor\Google.VersionHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver">
+      <HintPath>D:\My Data\My Game Projects\Asset PixelArt Upscaler\gvrocksnow&apos;s PixelArt Upscaler\Assets\MobileDependencyResolver\Editor\1.2.185\Google.JarResolver.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:\PavanExternalMain\Unity\6000.3.15f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
